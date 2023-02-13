@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcultor</title>
+    <meta name="author" content="Harmeet Matharoo">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/mathjs/lib/browser/math.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calculator-div">
+        <div id="screen-div-container">
+            <div id="screen-div1">
+                <input id="screen-div" type="text" name="screen-div">
+            </div>
+
+            <div id="error-msg-div">
+
+            </div>
+
+        </div>
+      
+
+        <div id="buttons-div-container">
+            <div id= "buttons-div">
+
+
+
+                <div class="functions">
+                    <button class="fxn" value="sqrt(" id="sqrt">&Sqrt;</button>
+
+                </div>
+
+                <div class="functions">
+                    <button class="fxn" value="pi" id="pie">&pi;</button>
+
+                </div>
+                <div class="functions">                
+                    <button class="fxn" value="^" id="squaring">x&sup2;</button>
+                    
+                </div>
+                
+                
+               
+                <!-- <button class="fxn" id="more-fxn">AD</button> -->
+
+                
+
+                <div class="more">
+
+                    <select class="more-fxn" name="fashion">
+                        <option value="" disabled selected>More</option>
+                        <optgroup label="Angles">
+                            <option value="rad(">Radian</option>
+                            <option value="deg(">Degree</option>
+                            <option value="grad(">Gradient</option>
+                        </optgroup>
+                        <optgroup label="Trigonometry">
+                            <option value="sin(">sin</option>
+                            <option value="cos(">Cos</option>
+                            <option value="tan(">tan</option>
+                            <option value="sec(">sec</option>
+                            <option value="cot(">cot</option>
+                            <option value="csc(">csc</option>
+                        </optgroup>
+                        <optgroup label="Others">
+                            <option value="log(">Log</option>
+                            <option value="round(">Round(x or x, y(decimal place))</option>
+                            <option value="derivative(">Derivative</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                
+
+                <button id="clear">AC</button>
+                <button class="num2" id="paren-left">(</button>
+                <button class="num2" id="paren-right">)</button>
+                <button class="operator">/</button>
+                
+                <button class="num num1">7</button>
+                <button class="num num1">8</button>
+                <button class="num num1">9</button>
+                <button class="operator">*</button>
+
+                <button class="num num1">4</button>
+                <button class="num num1">5</button>
+                <button class="num num1">6</button>
+                <button class="operator">-</button>
+
+                <button class="num num1">1</button>
+                <button class="num num1">2</button>
+                <button class="num num1">3</button>
+                <button class="operator">+</button>
+
+                <button class="num num1">0</button>
+                <button class="num1" id="dot">.</button>
+                <button class="num1" id="back">C</button>
+                <button id="equals">=</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
